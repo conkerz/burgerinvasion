@@ -3,28 +3,16 @@
 
 --- Project -------------------------------------------------------------------
 
-    *-class sprite
-    *-class moving sprite
-    *-class bullet
-    *-class wave
-    *-class game
-    *-class menu
-    *-class enemy
-    *-class tower
-    *-class subtowers
-    *-class button
-    *-class matrix
-    *-class database
-    *-menu
+    - fix game to vanilla state
+    - Add multi
+    - port to Nintendo DS
 
 --- Makefile ------------------------------------------------------------------
 
-    *-make
-    *-make clean
-    *-make debug
+    - restore -Werror flag when possible
 
 --- Repository ----------------------------------------------------------------
 
-    *-clean
+    - Keep it clean boys
 
 ===============================================================================
