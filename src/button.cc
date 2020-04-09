@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 #include <fstream>
 #include <string>
 #include "includes/button.hh"
