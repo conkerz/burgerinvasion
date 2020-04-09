@@ -1,0 +1,6 @@
+# ignore .o files
+*.o
+
+#ignore output
+burgerinvasion
+
