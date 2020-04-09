@@ -28,7 +28,7 @@ bool Tower::is_in_range(Enemy& target)
     float y = sprite_.getPosition().y + 16;
     float tx = target.sprite_.getPosition().x + 16;
     float ty = target.sprite_.getPosition().y + 16;
-    if (sqrt(pow((tx - x), 2) + pow(ty - y, 2)) < range_)
+    if (sqrt(std::pow((tx - x), 2) + std::pow(ty - y, 2)) < range_)
         return true;
     return false;
 }
