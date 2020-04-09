@@ -57,11 +57,11 @@ void GameInfo::initialize()
     const std::string& str_gold = "Gold : " + std::to_string(player_gold);
     sf::Text gold(str_gold, font, 25);
     gold.setPosition(8 * 32, 18 * 32 + 8);
-    gold.setColor(sf::Color::Black);
+    gold.setFillColor(sf::Color::Black);
     const std::string& str_score = "Gold : " + std::to_string(player_score);
     sf::Text score(str_score, font, 25);
     score.setPosition(13 * 32, 18 * 32 + 8);
-    score.setColor(sf::Color::Black);
+    score.setFillColor(sf::Color::Black);
 
     panel_ = new Hud(font, gold, score);
     panel_->init_prices();

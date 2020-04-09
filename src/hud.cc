@@ -20,17 +20,17 @@ void Hud::init_prices()
   normal_price_.setString("Price : 75$");
   normal_price_.setFont(game.font);
   normal_price_.setCharacterSize(15);
-  normal_price_.setColor(sf::Color::Black);
+  normal_price_.setFillColor(sf::Color::Black);
   normal_price_.setOrigin(-32 + 16, -18 * 32 - 7);
   fast_price_.setString("Price : 150$");
   fast_price_.setFont(game.font);
   fast_price_.setCharacterSize(15);
-  fast_price_.setColor(sf::Color::Black);
+  fast_price_.setFillColor(sf::Color::Black);
   fast_price_.setOrigin(-3 * 32 + 16, -18 * 32 - 7);
   stronk_price_.setString("Price : 305$");
   stronk_price_.setFont(game.font);
   stronk_price_.setCharacterSize(15);
-  stronk_price_.setColor(sf::Color::Black);
+  stronk_price_.setFillColor(sf::Color::Black);
   stronk_price_.setOrigin(-6 * 32 + 18, -18 * 32 - 7);
 }
 

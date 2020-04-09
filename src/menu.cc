@@ -18,17 +18,17 @@ void Menu::init_menu()
   play_.setString("Play");
   play_.setFont(game.font);
   play_.setCharacterSize(40);
-  play_.setColor(sf::Color::Black);
+  play_.setFillColor(sf::Color::Black);
   play_.setOrigin(-32 * 9, -32 * 3);
   exit_.setString("Exit");
   exit_.setFont(game.font);
   exit_.setCharacterSize(40);
-  exit_.setColor(sf::Color::Black);
+  exit_.setFillColor(sf::Color::Black);
   exit_.setOrigin(-32 * 11 - 16, -32 * 14 - 10);
   reset_.setString("Reset");
   reset_.setFont(game.font);
   reset_.setCharacterSize(40);
-  reset_.setColor(sf::Color::Black);
+  reset_.setFillColor(sf::Color::Black);
   reset_.setOrigin(-32 * 14, -32 * 3);
 
   cursor = new MySprite(*SpriteDB::t_cursor);
@@ -41,17 +41,17 @@ void Menu::init_pause()
   playp_.setString("Play");
   playp_.setFont(game.font);
   playp_.setCharacterSize(40);
-  playp_.setColor(sf::Color::Black);
+  playp_.setFillColor(sf::Color::Black);
   playp_.setOrigin(-32 * 9, -32 * 3);
   exitp_.setString("Exit");
   exitp_.setFont(game.font);
   exitp_.setCharacterSize(40);
-  exitp_.setColor(sf::Color::Black);
+  exitp_.setFillColor(sf::Color::Black);
   exitp_.setOrigin(-32 * 11 - 16, -32 * 14 - 10);
   reset_.setString("Reset");
   reset_.setFont(game.font);
   reset_.setCharacterSize(40);
-  reset_.setColor(sf::Color::Black);
+  reset_.setFillColor(sf::Color::Black);
   reset_.setOrigin(-32 * 14, -32 * 3);
 
   cursor = new MySprite(*SpriteDB::t_cursor);
@@ -114,20 +114,20 @@ void Menu::checkevents(sf::RenderWindow& window)
         if (!quitClicked(window))
         {
             if (game.current_state == MENU)
-                exit_.setColor(sf::Color::Black);
+                exit_.setFillColor(sf::Color::Black);
             else
-                exitp_.setColor(sf::Color::Black);
+                exitp_.setFillColor(sf::Color::Black);
         }
         if (!playClicked(window))
         {
             if (game.current_state == MENU)
-                play_.setColor(sf::Color::Black);
+                play_.setFillColor(sf::Color::Black);
             else
-                playp_.setColor(sf::Color::Black);
+                playp_.setFillColor(sf::Color::Black);
         }
         if (!resetClicked(window))
         {
-            reset_.setColor(sf::Color::Black);
+            reset_.setFillColor(sf::Color::Black);
         }
     checkWhile();
     }
@@ -155,9 +155,9 @@ bool Menu::playClicked(sf::RenderWindow& window)
       sf::Mouse::getPosition(window).y < 4 * 32)
     {
         if (game.current_state == MENU)
-            play_.setColor(sf::Color::Red);
+            play_.setFillColor(sf::Color::Red);
         else
-            playp_.setColor(sf::Color::Red);
+            playp_.setFillColor(sf::Color::Red);
         return true;
     }
     return false;
@@ -173,9 +173,9 @@ bool Menu::quitClicked(sf::RenderWindow& window)
       sf::Mouse::getPosition(window).y < 15 * 32 + 16 )
     {
         if (game.current_state == MENU)
-            exit_.setColor(sf::Color::Red);
+            exit_.setFillColor(sf::Color::Red);
         else
-            exitp_.setColor(sf::Color::Red);
+            exitp_.setFillColor(sf::Color::Red);
         return true;
     }
     return false;
@@ -189,7 +189,7 @@ bool Menu::resetClicked(sf::RenderWindow& window)
       sf::Mouse::getPosition(window).x < 17 * 32 &&
       sf::Mouse::getPosition(window).y < 4 * 32)
     {
-        reset_.setColor(sf::Color::Red);
+        reset_.setFillColor(sf::Color::Red);
         return true;
     }
     return false;
@@ -225,11 +225,11 @@ void Menu::init_end()
   win_msg_.setString("Congratulations, you defeated \n the final boss!");
   win_msg_.setFont(game.font);
   win_msg_.setCharacterSize(30);
-  win_msg_.setColor(sf::Color::White);
+  win_msg_.setFillColor(sf::Color::White);
   win_msg_.setOrigin(-32 * 2, -32 * 6);
   lose_msg_.setString("Congratulations, you succeded...\n in hard failing!");
   lose_msg_.setFont(game.font);
   lose_msg_.setCharacterSize(50);
-  lose_msg_.setColor(sf::Color::White);
+  lose_msg_.setFillColor(sf::Color::White);
   lose_msg_.setOrigin(-32 * 2, -32 * 6);
 }

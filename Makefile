@@ -1,5 +1,5 @@
 CXX = gcc
-CXXFLAGS = -lm -ldl -Wall -Wextra -pedantic -std=c++1y
+CXXFLAGS = -lm -ldl -Wall -Werror -Wextra -pedantic -std=c++1y
 LDFLAGS = -lstdc++ -lsfml-graphics -lsfml-window -lsfml-system
 
 SRC = main.cc game-info.cc my-sprite.cc matrix.cc sprite-db.cc hud.cc \
