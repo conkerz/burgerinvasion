@@ -1,0 +1,30 @@
+=== TODO LIST =================================================================
+
+
+--- Project -------------------------------------------------------------------
+
+    *-class sprite
+    *-class moving sprite
+    *-class bullet
+    *-class wave
+    *-class game
+    *-class menu
+    *-class enemy
+    *-class tower
+    *-class subtowers
+    *-class button
+    *-class matrix
+    *-class database
+    *-menu
+
+--- Makefile ------------------------------------------------------------------
+
+    *-make
+    *-make clean
+    *-make debug
+
+--- Repository ----------------------------------------------------------------
+
+    *-clean
+
+===============================================================================

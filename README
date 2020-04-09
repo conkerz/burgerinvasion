@@ -1,0 +1,129 @@
+=================================   RUSH C++   ================================
+|                                                                             |
+|   EPITA 2017                                                                |
+|                                                                             |
+===============================================================================
+
+    dumouc_a
+    pihan_l
+    blanc_f
+
+  ______                             _____                    _             
+  | ___ \                           |_   _|                  (_)            
+  | |_/ /_   _ _ __ __ _  ___ _ __    | | _ ____   ____ _ ___ _  ___  _ __  
+  | ___ \ | | | '__/ _` |/ _ \ '__|   | || '_ \ \ / / _` / __| |/ _ \| '_ \ 
+  | |_/ / |_| | | | (_| |  __/ |     _| || | | \ V / (_| \__ \ | (_) | | | |
+  \____/ \__,_|_|  \__, |\___|_|     \___/_| |_|\_/ \__,_|___/_|\___/|_| |_|
+                    __/ |                                                   
+                   |___/                                                    
+
+
+
+--- The Game ---
+
+It's terrible, you're thirsty, in the middle of a desert, and the only water 
+left is really really precious. Suddenly, waves of fast-food burgers spawns 
+from deep earth and starts rushing at your precious water. You MUST stop them 
+before they reach it, only one burger could drink your entiere water reserve, 
+there is no second chance!
+
+
+
+--- Installation ---
+
+At the root of the repository, juste enter the following shell command:
+
+    make
+
+This will compile and generate a `burgerinvasion' binary at the root of the 
+repository. Juste launch the binary like this:
+
+    ./burgerinvasion path
+
+Where path is a path to a txt file that represent the map. Two maps are
+provided in the res/ folder at the root. So you can call the game like so:
+
+    ./burgerinvasion res/map1
+    ./burgerinvasion res/map2
+
+A single map will be different at every loading since some of the sand blocks 
+are randomly transformed into bushes or rocks that will prevent the player 
+from spawing towers on them.
+
+--- Map Edition ---
+
+You can create your own maps by making a text file, writing character inside, 
+and call the game with the correct path. Here is the format of a map file:
+
+Strictely 24 columns.
+Strictely 18 rows.
+Only characters that follow:
+
+'s' -> sand block, a block where you can land a tower
+'p' -> path block, a block that represent a path
+'b' -> begin block, the mob spawn (must be present once)
+'e' -> end block, the finisht precious water (must be present once)
+
+The 'p' characters should form a one-character width path from the 'b' char to 
+the 'e' char. Example with the map map1:
+
+ssssssssssssssssssssssss
+ssssssssssssssssssssssss
+ssbssssssssssppppppsssss
+ssppssssssssspsssspsssss
+ssspppppppssspssssppssss
+ssssssssspssspssssspssss
+ssssssssspppppssssspssss
+ssssssssssssssssspppssss
+sssspppppppppsssspssssss
+sssspsssssssppppppssssss
+sssspsssssssssssssssssss
+sssspssssssppppsspppppps
+sssspsssssspsspsspssssps
+ssssppppppppssppppssssps
+ssssssssssssssssssssssps
+ssssssssssssssssssepppps
+ssssssssssssssssssssssss
+ssssssssssssssssssssssss
+
+
+
+--- Playing ---
+
+When you launch the game, you fall in the main menu. You can press the exit 
+button to leave the game or start to begin the map you loaded.
+
+While in game, you can press ESC on your keyboard to display PAUSE MENU.
+In the pause menu, you can press EXIT to return to main menu or play to 
+resume the game. You can also click on RESET to reset the whole game.
+When you reset, you will stay in pause menu, just press start to continu again.
+
+You have to ressources: money and score.
+
+While your in the game, you need to place towers. By default your cursor is 
+normal, you can only get an overview of the map. If you click on one of the 
+towers on the left-bottom, you'll select it and you will be able to place it 
+on sand by clicking (if you have enough money). You can press RIGHT click to 
+return at any moment to the default cursor.
+
+
+
+--- Waves ---
+
+The game is divided into 7 waves, which goes in the following order:
+
+-The practice wave
+-The easy wave
+-The medium wave
+-The hard wave
+-The insane wave
+-The impossible wave
+-The 'umad' wave
+
+Good luck!
+
+
+===============================================================================
+|                             Under GNU License                               |
+|                          NOT the property of EPITA...                       |
+===============================================================================
